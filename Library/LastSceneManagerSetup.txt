@@ -1,4 +1,5 @@
 sceneSetups:
-- path: Assets/Scene/cenaBase.unity
+- path: Assets/Scene/PACMAN.unity
   isLoaded: 1
   isActive: 1
+  isSubScene: 0
