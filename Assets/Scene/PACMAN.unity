@@ -199,6 +199,75 @@ Transform:
   m_Father: {fileID: 1218583254}
   m_RootOrder: 113
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1060686
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1963764361}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 9163f841dcba7544ab818cf0a6d3706a, type: 3}
+      propertyPath: m_Name
+      value: Pacman
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9163f841dcba7544ab818cf0a6d3706a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.48023558
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9163f841dcba7544ab818cf0a6d3706a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.4023693
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9163f841dcba7544ab818cf0a6d3706a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.6541425
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9163f841dcba7544ab818cf0a6d3706a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9163f841dcba7544ab818cf0a6d3706a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7136574
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9163f841dcba7544ab818cf0a6d3706a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9163f841dcba7544ab818cf0a6d3706a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70049495
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9163f841dcba7544ab818cf0a6d3706a, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9163f841dcba7544ab818cf0a6d3706a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9163f841dcba7544ab818cf0a6d3706a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9163f841dcba7544ab818cf0a6d3706a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9163f841dcba7544ab818cf0a6d3706a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.40000004
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9163f841dcba7544ab818cf0a6d3706a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9163f841dcba7544ab818cf0a6d3706a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.40000004
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9163f841dcba7544ab818cf0a6d3706a, type: 3}
 --- !u!1 &5998265
 GameObject:
   m_ObjectHideFlags: 0
@@ -13476,6 +13545,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1258895721}
   - component: {fileID: 1258895722}
+  - component: {fileID: 1258895723}
   m_Layer: 0
   m_Name: NaoMexerAqui
   m_TagString: Untagged
@@ -13515,10 +13585,23 @@ CharacterController:
   m_Height: 2
   m_Radius: 0.5
   m_SlopeLimit: 45
-  m_StepOffset: 0.3
+  m_StepOffset: 0.03
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1258895723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258895720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33853252e6dc37c4f9e9287aec3120b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocity: 0.3
 --- !u!1 &1277022582
 GameObject:
   m_ObjectHideFlags: 0
@@ -20036,6 +20119,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6562598180616894968, guid: 07a0b88bb7e9d994fbf790690eff50fe,
+        type: 3}
+      propertyPath: field of view
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 6562598180616894968, guid: 07a0b88bb7e9d994fbf790690eff50fe,
+        type: 3}
+      propertyPath: m_projectionMatrixMode
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 07a0b88bb7e9d994fbf790690eff50fe, type: 3}
